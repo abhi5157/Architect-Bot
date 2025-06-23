@@ -7,6 +7,7 @@
 
 A powerful **Retrieval-Augmented Generation (RAG)** application that helps users understand real estate regulations, architecture norms, and design principles. Built with modern AI technologies for accurate, context-aware responses.
 
+
 ## 🌟 Features
 
 - 🤖 **Smart Responses**: Powered by Groq's Mistral API
@@ -14,6 +15,22 @@ A powerful **Retrieval-Augmented Generation (RAG)** application that helps users
 - 🔍 **Semantic Search**: Using sentence-transformers for accurate context retrieval
 - 💾 **Persistent Storage**: Local ChromaDB for reliable vector storage
 - 🎨 **Modern UI**: Built with Streamlit for a seamless user experience
+
+## 📸 Screenshots
+
+<details open>
+<summary>Click to expand/collapse</summary>
+
+### Main Interface
+![Main Interface](../image/first.png)
+
+### Query Response
+![Query Response](../image/second.png)
+
+### Context View
+![Context View](../image/three.png)
+
+</details>
 
 ## 🔧 Tech Stack
 
