@@ -22,13 +22,13 @@ A powerful **Retrieval-Augmented Generation (RAG)** application that helps users
 <summary>Click to expand/collapse</summary>
 
 ### Main Interface
-![Main Interface](../image/first.png)
+![Main Interface](./image/first.png)
 
 ### Query Response
-![Query Response](../image/second.png)
+![Query Response](./image/second.png)
 
 ### Context View
-![Context View](../image/three.png)
+![Context View](./image/three.png)
 
 </details>
 
