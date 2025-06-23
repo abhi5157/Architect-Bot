@@ -5,14 +5,19 @@ from chromadb.config import Settings
 from sentence_transformers import SentenceTransformer
 from groq import Groq
 from dotenv import load_dotenv
+from pathlib import Path
 
 # Load API keys
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
+# Setup paths
+BASE_DIR = Path(__file__).parent.parent
+CHROMA_PATH = os.path.join(BASE_DIR, "vector_db", "chroma_store")
+
 # Load models and Chroma
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
-chroma_client = chromadb.PersistentClient(path="vector_db/chroma_store")
+chroma_client = chromadb.PersistentClient(path=str(CHROMA_PATH))
 collection = chroma_client.get_collection("architect_knowledge")
 groq_client = Groq(api_key=GROQ_API_KEY)
 
