@@ -1,0 +1,34 @@
+# ⛔ Ignore Python cache
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# ⛔ Ignore environment and secrets
+.env
+.vscode/
+.v/
+venv/
+ENV/
+env/
+.venv/
+
+# ⛔ Ignore local vector database and embeddings
+
+data/
+
+# ⛔ Ignore Streamlit cache
+.streamlit/
+*.sqlite3
+
+# ⛔ Ignore logs or temp files
+*.log
+*.tmp
+*.bak
+
+# ⛔ Ignore OS system files
+.DS_Store
+Thumbs.db
