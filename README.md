@@ -20,12 +20,11 @@ This project is a **Retrieval-Augmented Generation (RAG)** application designed 
 
 ```mermaid
 graph TD
-    A[User Question] --> B[Embed with MiniLM]
-    B --> C[ChromaDB Search]
-    C --> D[Relevant Context Docs]
-    D --> E[LLM via Groq API (Mistral)]
-    E --> F[Final Answer]
-    F --> G[Streamlit UI]
+    A[Raw Data] --> B[Preprocessing]
+    B --> C[Chunking]
+    C --> D[Embedding]
+    D --> E[LLM via Groq API (llama-3.1-8b-instant)]
+    E --> F[Streamlit UI]
 
 
 
