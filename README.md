@@ -23,10 +23,9 @@ graph TD
     A[Raw Data] --> B[Preprocessing]
     B --> C[Chunking]
     C --> D[Embedding]
-    D --> E[LLM via Groq API (llama-3.1-8b-instant)]
+    D --> E[LLM via Groq API (Mistral)]
     E --> F[Streamlit UI]
-
-
+```
 
 
 rag-architect-app/
